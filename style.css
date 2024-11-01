@@ -1,0 +1,571 @@
+/* RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESET */
+
+
+
+
+/* DEFINIR WIDTH/HEIGHT JÁ SETTADOS AJUDA NA REPONSIVIDADE
+(LEMBRAR ATIVIDADE INTERFACE PRIME VIDEO) */
+
+/* QUANDO UM ELEMENTO TEM UM WIDTH JÁ SETTADO E A TELA É MENOR DO QUE ESSE WIDTH 
+ELE DIMINUI AUTOMÁTICAMENTE COM A TELA SEM MECHER NO ELEMENTO, DIMINUI RESPONSIVO JUNTO COM SEUS ELEMENTOS 
+EX: DIV COM BOTÃO OU TEXTO  */
+
+
+
+
+@font-face {
+    font-family: arcadeFont;
+    src: url(arcadeFont/ARCADECLASSIC.TTF);
+}
+
+
+
+
+
+/* PARA O HTML COBRIR A PÁGINA INTEIRA SEM DEIXAR ESPAÇOS EM BAIXO EM BRANCO */
+
+html body {
+    background-color: rgb(24, 111, 197);
+    width: 100%;
+    height: 100%;
+    font-family: arcadeFont;
+    overflow-x: hidden;
+}
+
+/* PARA O HTML COBRIR A PÁGINA INTEIRA SEM DEIXAR ESPAÇOS EM BAIXO EM BRANCO */
+
+
+
+
+
+
+/* KEY-FRAME */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes pulse {
+    0% ,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-0%);
+    }
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-0%);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-0%);
+    }
+}
+
+
+
+
+/* KEY-FRAME */
+
+
+
+
+
+
+#navTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 885px;
+}
+
+#maeimgPokedex {
+    display: flex;
+    justify-content: center;
+    min-width: 885px;
+    background-color: rgb(255, 71, 71);
+}
+
+#imgPokedex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/kindpng_2227056.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 865px;
+    height: 690px;
+    margin: 10px;
+}
+
+
+#imgPokedex {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#imgPokedex:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+/* EFEITO HOVER E SEM HOVER SEM JS,COLOCAMOS A MESMA ANIMAÇÃO NO ELEMENTO SEM O HOVER PORÉM SEU TRANSFORM SCALE 
+SERÁ UM, ENTÃO TODA VEZ QUE ATIVAR O HOVER E LOGO APÓS EU SAIR DO HOVER, ELE VOLTARÁ AO SEU NORMAL POIS ESSA ANIMAÇÃO ESTÁ NO 
+DEFAULT DELE */
+
+
+
+#logoPokemon {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#logoPokemon:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* EFEITO HOVER E SEM HOVER SEM JS,COLOCAMOS A MESMA ANIMAÇÃO NO ELEMENTO SEM O HOVER PORÉM SEU TRANSFORM SCALE 
+SERÁ UM, ENTÃO TODA VEZ QUE ATIVAR O HOVER E LOGO APÓS EU SAIR DO HOVER, ELE VOLTARÁ AO SEU NORMAL POIS ESSA ANIMAÇÃO ESTÁ NO 
+DEFAULT DELE */
+
+#inputTextoPokemon {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    background-color: rgb(194, 232, 255);
+    border: 7px solid rgb(121, 138, 155);
+    width: 200px;
+    height: 10px;
+    color: rgb(121, 138, 155);
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 277px;
+}
+
+
+#inputTextoPokemon {
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
+
+#inputTextoPokemon:hover {
+    transform: scale(1.04);
+    transition: transform 0.1s ease-in-out;
+}
+
+
+#pokemonSprite {
+    position: absolute;
+    top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+#pokemonHelloMessageOrError {
+    position: absolute;
+    top: 50px;
+    margin-right: 150px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+#dataPokemon {
+    display: flex;
+    align-self: last baseline;
+    width: 258px;
+    height: 190px;
+    margin-right: 11px;
+    margin-bottom: 65px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: rgb(49, 46, 46);
+
+}
+
+#dataPokemon p {
+    margin: 0;
+    padding: 0;
+}
+
+#pokemonName {
+    font-family: arcadeFont;
+}
+
+
+
+#audioLegacy {
+    display: none;
+}
+
+#audioLatest {
+    display: none;
+}
+
+
+#butonsAudio {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 500px;
+    right: 90px;
+    flex-direction: column;
+}
+
+#legacyButton {
+    background-color: rgb(226, 235, 242);
+    width: 100px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+     
+}
+
+#latestButton {
+    background-color: rgb(226, 235, 242);
+    width: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+}
+
+
+#soundWave{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 210px;
+    top: 135px;
+    transform: rotate(90deg);
+}
+
+
+#divTextImg{
+     
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     
+     
+    /* align-items: center; realmente centraliza no meio */
+}
+
+#pikachuContentDiv{
+   opacity: 0;
+}
+
+#contentText{
+     
+    background-color:rgb(254, 213, 33);
+    min-width: 865px;
+    height: 700px;
+    border-radius: 100px;
+    margin: 10px;
+    opacity: 0;
+    justify-content: center;
+    text-align: center; 
+    
+   
+}
+
+#contentText h1{
+    font-size: 48px;
+}
+
+#contentText p{
+    font-size: 38px;
+}
+
+
+
+
+
+
+
+#divTextImg2{ 
+    background-color: rgb(226, 235, 242); 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 885px;
+}
+
+#pikachuContentDiv2{
+    opacity: 0;
+    border-radius: 30px;
+ }
+ 
+
+
+
+#contentText2{
+     
+    background-color:rgb(254, 213, 33);
+    min-width: 865px;
+    height: 700px;
+    border-radius: 100px;
+    margin: 10px;
+    opacity: 0;
+    justify-content: center;
+    text-align: center;
+     
+}
+
+#contentText2 h1{
+    font-size: 48px;
+}
+
+#contentText2 p{
+    font-size: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#divTextImg3{ 
+    background-color: rgb(255, 71, 71); 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 885px;
+}
+
+#pikachuContentDiv3{
+    opacity: 0;
+    border-radius: 30px;
+ }
+ 
+
+
+
+#contentText3{
+     
+    background-color:rgb(254, 213, 33);
+    min-width: 865px;
+    height: 700px;
+    border-radius: 100px;
+    margin: 10px;
+    opacity: 0;
+    justify-content: center;
+    text-align: center;
+     
+}
+
+#contentText3 h1{
+    font-size: 48px;
+}
+
+#contentText3 p{
+    font-size: 38px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1623px) {
+    #divTextImg2{
+        flex-wrap: wrap-reverse;
+    }
+  }
+
+ 
