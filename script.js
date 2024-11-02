@@ -356,6 +356,16 @@ const showPokemon = async (pokemon) => {
 
         //NAMENAME/WEIGHT/HEIGHT
 
+        // AUDIO NULL
+
+        document.getElementById("audioLatestSource").src = ``
+        document.getElementById("audioLegacySource").src = ``
+        document.getElementById("audioLatest").load();
+        document.getElementById("audioLegacy").load();
+
+
+        // AUDIO NULL
+
     }
 
 

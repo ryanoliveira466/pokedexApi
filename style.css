@@ -354,20 +354,44 @@ DEFAULT DELE */
 #dataPokemon {
     display: flex;
     align-self: last baseline;
-    width: 258px;
-    height: 190px;
+    width: 288px;
+    height: 210px;
     margin-right: 11px;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     flex-wrap: wrap;
     flex-direction: column;
     color: rgb(49, 46, 46);
+    background-color: rgb(194, 232, 255);
+    border: 7px solid #798a9b;
+    transform: scale(1);
+    transition: 2s ease;
+     
+
+
+
+
+    /* width: 258px;
+    height: 190px; */
+     
+   
+    
+     
 
 }
 
-#dataPokemon p {
+#dataPokemon p{
     margin: 0;
     padding: 0;
+    margin-left: 3px;
+     
 }
+
+#dataPokemon:hover{
+    transform: scale(1.25);
+    transition: 2s ease;
+}
+
+ 
 
 #pokemonName {
     font-family: arcadeFont;
