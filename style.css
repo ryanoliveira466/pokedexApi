@@ -157,14 +157,17 @@ EX: DIV COM BOTÃO OU TEXTO  */
 
 /* PARA O HTML COBRIR A PÁGINA INTEIRA SEM DEIXAR ESPAÇOS EM BAIXO EM BRANCO */
 
-html body {
+html body  {
     background-color: rgb(24, 111, 197);
     width: 100%;
     height: 100%;
     font-family: arcadeFont;
     overflow-x: hidden;
     scroll-behavior: smooth;
+     
 }
+
+ 
 
 /* PARA O HTML COBRIR A PÁGINA INTEIRA SEM DEIXAR ESPAÇOS EM BAIXO EM BRANCO */
 
@@ -427,8 +430,10 @@ DEFAULT DELE */
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    min-width: 885px;
+    overflow-x: hidden;
      
-     
+     /* MIN WIDTH E OVERFLOW X NO CONTAINER COM OS CONTEÚDOS AJUDARAM A NÃO DAR OVERFLOW */
     /* align-items: center; realmente centraliza no meio */
 }
 
@@ -473,6 +478,7 @@ DEFAULT DELE */
     flex-wrap: wrap;
     justify-content: space-evenly;
     min-width: 885px;
+    overflow-x: hidden;
 }
 
 #pikachuContentDiv2{
@@ -528,6 +534,7 @@ DEFAULT DELE */
     flex-wrap: wrap;
     justify-content: space-evenly;
     min-width: 885px;
+    overflow-x: hidden;
 }
 
 #pikachuContentDiv3{
