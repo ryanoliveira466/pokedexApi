@@ -448,6 +448,36 @@ document.getElementById('divTextImg').addEventListener('wheel', function(event){
 })
 
 
+document.getElementById('divTextImg').addEventListener('touchstart', function(event){
+
+    document.getElementById('pikachuContentDiv').style.animation = '1s fadeIn ease-in'
+
+    document.getElementById("pikachuContentDiv").addEventListener("animationend", function() {
+        document.getElementById("pikachuContentDiv").style.opacity = '1'; // Reset animation
+    }, { once: true });
+
+
+
+
+
+    document.getElementById('contentText').style.animation = '3s slideInRight ease-out forwards'
+
+    document.getElementById("contentText").addEventListener("animationend", function() {
+       
+    }, { once: true });
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -476,6 +506,36 @@ document.getElementById('divTextImg2').addEventListener('wheel', function(event)
 
 
 
+document.getElementById('divTextImg2').addEventListener('touchstart', function(event){
+
+    document.getElementById('pikachuContentDiv2').style.animation = '1s fadeIn ease-in'
+
+    document.getElementById("pikachuContentDiv2").addEventListener("animationend", function() {
+        document.getElementById("pikachuContentDiv2").style.opacity = '1'; // Reset animation
+    }, { once: true });
+
+
+
+
+
+    document.getElementById('contentText2').style.animation = '3s slideInLeft ease-out forwards'
+
+    document.getElementById("contentText2").addEventListener("animationend", function() {
+       
+    }, { once: true });
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -499,6 +559,29 @@ document.getElementById('divTextImg3').addEventListener('wheel', function(event)
        
     }, { once: true });
 })
+
+
+
+document.getElementById('divTextImg3').addEventListener('touchstart', function(event){
+
+    document.getElementById('pikachuContentDiv3').style.animation = '1s fadeIn ease-in'
+
+    document.getElementById("pikachuContentDiv3").addEventListener("animationend", function() {
+        document.getElementById("pikachuContentDiv3").style.opacity = '1'; // Reset animation
+    }, { once: true });
+
+
+
+
+
+    document.getElementById('contentText3').style.animation = '3s slideInRight ease-out forwards'
+
+    document.getElementById("contentText3").addEventListener("animationend", function() {
+       
+    }, { once: true });
+})
+
+
 
 
 

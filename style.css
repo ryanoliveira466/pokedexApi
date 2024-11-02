@@ -163,6 +163,7 @@ html body {
     height: 100%;
     font-family: arcadeFont;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* PARA O HTML COBRIR A PÁGINA INTEIRA SEM DEIXAR ESPAÇOS EM BAIXO EM BRANCO */
