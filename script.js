@@ -17,26 +17,26 @@ document.getElementById("inputTextoPokemon").addEventListener("input", function 
 
 document.getElementById("legacyButton").addEventListener('click', function () {
 
-    document.getElementById("legacyButton").style.animation =  `0.2s pulse`
+    document.getElementById("legacyButton").style.animation = `0.2s pulse`
 
-    document.getElementById("legacyButton").addEventListener("animationend", function() {
+    document.getElementById("legacyButton").addEventListener("animationend", function () {
         document.getElementById("legacyButton").style.animation = ''; // Reset animation
     }, { once: true });
-     
+
     document.getElementById("audioLegacy").play()
     document.getElementById("soundWave").style.display = "flex"
-    
-    
+
+
 
     document.getElementById("audioLegacy").addEventListener('loadedmetadata', () => {
-       document.getElementById("audioLegacy").duration // Logs the total duration in seconds
+        document.getElementById("audioLegacy").duration // Logs the total duration in seconds
     });
 
-     
 
-    setTimeout(function(){
+
+    setTimeout(function () {
         document.getElementById("soundWave").style.display = "none"
-    },  document.getElementById("audioLegacy").duration * 1000)
+    }, document.getElementById("audioLegacy").duration * 1000)
 
 
 })
@@ -51,30 +51,30 @@ document.getElementById("latestButton").addEventListener('click', function () {
 
     document.getElementById("latestButton").style.animation = '0.2s pulse'
 
-    document.getElementById("latestButton").addEventListener("animationend", function() {
+    document.getElementById("latestButton").addEventListener("animationend", function () {
         document.getElementById("latestButton").style.animation = ''; // Reset animation
     }, { once: true });
 
     document.getElementById("audioLatest").play()
     document.getElementById("soundWave").style.display = "flex"
- 
-     
+
+
 
     document.getElementById("audioLatest").addEventListener('loadedmetadata', () => {
 
         document.getElementById("audioLatest").duration // Logs the total duration in seconds
-        
- 
+
+
     });
 
 
- 
-    setTimeout(function(){
+
+    setTimeout(function () {
         document.getElementById("soundWave").style.display = "none"
     }, document.getElementById("audioLatest").duration * 1000)
 
-    
-    
+
+
 })
 
 
@@ -302,7 +302,7 @@ const showPokemon = async (pokemon) => {
 
 
         //AUDIO
-   
+
         document.getElementById("audioLatestSource").src = `${datapokemon.cries.latest}`
         document.getElementById("audioLegacySource").src = `${datapokemon.cries.legacy}`
 
@@ -312,7 +312,7 @@ const showPokemon = async (pokemon) => {
         document.getElementById("audioLatest").load();
         document.getElementById("audioLegacy").load();
 
-              
+
         //AUDIO
 
 
@@ -376,10 +376,10 @@ const showPokemon = async (pokemon) => {
 
 
 
- 
+
 }
 
- 
+
 //QUANDO O USUARIO DA SCROOL EM CIMA DA IMAGEM, A IMAGEM MUDA A SUA OPACIDADE DEPENDENDO DO DELTAY
 
 // let initialData = { myNumber: 0 };
@@ -403,13 +403,13 @@ const showPokemon = async (pokemon) => {
 //         else{
 //             storedData.myNumber += 0.1;   
 //             document.getElementById('teste').style.opacity = `${storedData.myNumber}`;  
-            
+
 //             sessionStorage.setItem('myData', JSON.stringify(storedData)); 
 
 //         }
-        
-        
-        
+
+
+
 //     }
 
 //     else if(y < reference){
@@ -422,14 +422,14 @@ const showPokemon = async (pokemon) => {
 //         else{
 //             storedData.myNumber -= 0.1;   
 //             document.getElementById('teste').style.opacity = `${storedData.myNumber}`;  
-            
+
 //             sessionStorage.setItem('myData', JSON.stringify(storedData));
 
 //         }
-     
+
 //     }
 
- 
+
 // })
 
 
@@ -438,11 +438,11 @@ const showPokemon = async (pokemon) => {
 
 
 
-document.getElementById('divTextImg').addEventListener('wheel', function(event){
+document.getElementById('divTextImg').addEventListener('wheel', function (event) {
 
     document.getElementById('pikachuContentDiv').style.animation = '1s fadeIn ease-in'
 
-    document.getElementById("pikachuContentDiv").addEventListener("animationend", function() {
+    document.getElementById("pikachuContentDiv").addEventListener("animationend", function () {
         document.getElementById("pikachuContentDiv").style.opacity = '1'; // Reset animation
     }, { once: true });
 
@@ -452,17 +452,17 @@ document.getElementById('divTextImg').addEventListener('wheel', function(event){
 
     document.getElementById('contentText').style.animation = '3s slideInRight ease-out forwards'
 
-    document.getElementById("contentText").addEventListener("animationend", function() {
-       
+    document.getElementById("contentText").addEventListener("animationend", function () {
+
     }, { once: true });
 })
 
 
-document.getElementById('divTextImg').addEventListener('touchstart', function(event){
+document.getElementById('divTextImg').addEventListener('touchstart', function (event) {
 
     document.getElementById('pikachuContentDiv').style.animation = '1s fadeIn ease-in'
 
-    document.getElementById("pikachuContentDiv").addEventListener("animationend", function() {
+    document.getElementById("pikachuContentDiv").addEventListener("animationend", function () {
         document.getElementById("pikachuContentDiv").style.opacity = '1'; // Reset animation
     }, { once: true });
 
@@ -472,8 +472,8 @@ document.getElementById('divTextImg').addEventListener('touchstart', function(ev
 
     document.getElementById('contentText').style.animation = '3s slideInRight ease-out forwards'
 
-    document.getElementById("contentText").addEventListener("animationend", function() {
-       
+    document.getElementById("contentText").addEventListener("animationend", function () {
+
     }, { once: true });
 })
 
@@ -495,11 +495,11 @@ document.getElementById('divTextImg').addEventListener('touchstart', function(ev
 
 
 
-document.getElementById('divTextImg2').addEventListener('wheel', function(event){
+document.getElementById('divTextImg2').addEventListener('wheel', function (event) {
 
     document.getElementById('pikachuContentDiv2').style.animation = '1s fadeIn ease-in'
 
-    document.getElementById("pikachuContentDiv2").addEventListener("animationend", function() {
+    document.getElementById("pikachuContentDiv2").addEventListener("animationend", function () {
         document.getElementById("pikachuContentDiv2").style.opacity = '1'; // Reset animation
     }, { once: true });
 
@@ -509,18 +509,18 @@ document.getElementById('divTextImg2').addEventListener('wheel', function(event)
 
     document.getElementById('contentText2').style.animation = '3s slideInLeft ease-out forwards'
 
-    document.getElementById("contentText2").addEventListener("animationend", function() {
-       
+    document.getElementById("contentText2").addEventListener("animationend", function () {
+
     }, { once: true });
 })
 
 
 
-document.getElementById('divTextImg2').addEventListener('touchstart', function(event){
+document.getElementById('divTextImg2').addEventListener('touchstart', function (event) {
 
     document.getElementById('pikachuContentDiv2').style.animation = '1s fadeIn ease-in'
 
-    document.getElementById("pikachuContentDiv2").addEventListener("animationend", function() {
+    document.getElementById("pikachuContentDiv2").addEventListener("animationend", function () {
         document.getElementById("pikachuContentDiv2").style.opacity = '1'; // Reset animation
     }, { once: true });
 
@@ -530,8 +530,8 @@ document.getElementById('divTextImg2').addEventListener('touchstart', function(e
 
     document.getElementById('contentText2').style.animation = '3s slideInLeft ease-out forwards'
 
-    document.getElementById("contentText2").addEventListener("animationend", function() {
-       
+    document.getElementById("contentText2").addEventListener("animationend", function () {
+
     }, { once: true });
 })
 
@@ -551,11 +551,11 @@ document.getElementById('divTextImg2').addEventListener('touchstart', function(e
 
 
 
-document.getElementById('divTextImg3').addEventListener('wheel', function(event){
+document.getElementById('divTextImg3').addEventListener('wheel', function (event) {
 
     document.getElementById('pikachuContentDiv3').style.animation = '1s fadeIn ease-in'
 
-    document.getElementById("pikachuContentDiv3").addEventListener("animationend", function() {
+    document.getElementById("pikachuContentDiv3").addEventListener("animationend", function () {
         document.getElementById("pikachuContentDiv3").style.opacity = '1'; // Reset animation
     }, { once: true });
 
@@ -565,18 +565,18 @@ document.getElementById('divTextImg3').addEventListener('wheel', function(event)
 
     document.getElementById('contentText3').style.animation = '3s slideInRight ease-out forwards'
 
-    document.getElementById("contentText3").addEventListener("animationend", function() {
-       
+    document.getElementById("contentText3").addEventListener("animationend", function () {
+
     }, { once: true });
 })
 
 
 
-document.getElementById('divTextImg3').addEventListener('touchstart', function(event){
+document.getElementById('divTextImg3').addEventListener('touchstart', function (event) {
 
     document.getElementById('pikachuContentDiv3').style.animation = '1s fadeIn ease-in'
 
-    document.getElementById("pikachuContentDiv3").addEventListener("animationend", function() {
+    document.getElementById("pikachuContentDiv3").addEventListener("animationend", function () {
         document.getElementById("pikachuContentDiv3").style.opacity = '1'; // Reset animation
     }, { once: true });
 
@@ -586,8 +586,8 @@ document.getElementById('divTextImg3').addEventListener('touchstart', function(e
 
     document.getElementById('contentText3').style.animation = '3s slideInRight ease-out forwards'
 
-    document.getElementById("contentText3").addEventListener("animationend", function() {
-       
+    document.getElementById("contentText3").addEventListener("animationend", function () {
+
     }, { once: true });
 })
 
@@ -598,3 +598,698 @@ document.getElementById('divTextImg3').addEventListener('touchstart', function(e
 
 
 
+
+
+
+
+
+//MEW
+
+
+   let initialDataMew1 = { myNumber: 0 };
+   sessionStorage.setItem('myDataMew1', JSON.stringify(initialDataMew1));
+
+   document.getElementById('divTextImg4').addEventListener('wheel', (event) => {
+       var y = event.deltaY;
+       let reference = 0
+       let storedData = JSON.parse(sessionStorage.getItem('myDataMew1'));
+       if (y > reference) {
+      
+        
+            if (storedData.myNumber <= -40) {
+                storedData.myNumber = -40
+                sessionStorage.setItem('myDataMew1', JSON.stringify(storedData));
+
+                document.getElementById('iframeYoutube').style.animation = '1s fadeIn ease-in'
+                document.getElementById("iframeYoutube").addEventListener("animationend", function () {
+                  document.getElementById("iframeYoutube").style.opacity = '1';  //Reset animation
+              }, { once: true });
+        
+            }
+
+            else {
+                storedData.myNumber += -20;
+                document.getElementById('mew').style.transform = `translateY(${storedData.myNumber}%)`;
+                sessionStorage.setItem('myDataMew1', JSON.stringify(storedData));
+
+              
+
+            }
+
+        
+
+
+
+       }
+
+       else if (y < reference) {
+
+
+ 
+
+
+          if (storedData.myNumber >= 0) {
+              storedData.myNumber = 0
+              sessionStorage.setItem('myDataMew1', JSON.stringify(storedData));
+
+          }
+
+          else {
+              storedData.myNumber += 20;
+              document.getElementById('mew').style.transform = `translateY(${storedData.myNumber}%)`;
+
+              sessionStorage.setItem('myDataMew1', JSON.stringify(storedData));
+
+
+              document.getElementById('iframeYoutube').style.animation = '1s fadeOut ease-out'
+              document.getElementById("iframeYoutube").addEventListener("animationend", function () {
+                document.getElementById("iframeYoutube").style.opacity = '0';  //Reset animation
+            }, { once: true });
+
+          }
+
+
+       }
+   });
+
+
+
+//MEW
+
+
+
+
+//MEW TOUCH
+ 
+ let reference = { myNumberReference: 0};
+ sessionStorage.setItem('myDataReference', JSON.stringify(reference));
+
+
+ document.getElementById('divTextImg4').addEventListener('touchstart', function(event) {   
+      let initialDataMew = { myNumber: event.touches[0].clientY };
+      sessionStorage.setItem('myDataMew', JSON.stringify(initialDataMew ));
+      
+    
+ });
+
+
+
+
+  document.getElementById('divTextImg4').addEventListener('touchmove', (event) => {
+    //  console.log('Touch move:', event.touches[0].clientY);
+
+    
+    
+
+     
+    
+      var y = event.touches[0].clientY;
+      let reference = JSON.parse(sessionStorage.getItem('myDataReference'));
+      let storedData = JSON.parse(sessionStorage.getItem('myDataMew'));
+
+      console.log(reference.myNumberReference);
+
+      if (y < storedData.myNumber) {
+
+        
+           if (reference.myNumberReference <= -40) {
+               reference.myNumberReference = -40
+               sessionStorage.setItem('myDataReference', JSON.stringify(reference));
+
+               document.getElementById('iframeYoutube').style.animation = '1s fadeIn ease-in'
+               document.getElementById("iframeYoutube").addEventListener("animationend", function () {
+                 document.getElementById("iframeYoutube").style.opacity = '1'; // Reset animation
+             }, { once: true });
+        
+           }
+
+           else {
+               reference.myNumberReference += -20;
+               document.getElementById('mew').style.transform = `translateY(${reference.myNumberReference}%)`;
+               sessionStorage.setItem('myDataReference', JSON.stringify(reference));
+
+              
+
+           }
+
+        
+
+
+
+      }
+
+      else if (y > storedData.myNumber) {
+
+
+         
+
+
+         if (reference.myNumberReference >= 0) {
+             reference.myNumberReference = 0
+             sessionStorage.setItem('myDataReference', JSON.stringify(reference));
+
+         }
+
+         else {
+             reference.myNumberReference += 20;
+             document.getElementById('mew').style.transform = `translateY(${reference.myNumberReference}%)`;
+
+             sessionStorage.setItem('myDataReference', JSON.stringify(reference));
+
+
+             document.getElementById('iframeYoutube').style.animation = '1s fadeOut ease-out'
+             document.getElementById("iframeYoutube").addEventListener("animationend", function () {
+               document.getElementById("iframeYoutube").style.opacity = '0'; // Reset animation
+           }, { once: true });
+
+         }
+
+
+      }
+  });
+
+
+
+//MEW TOUCH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEWMOBILE
+
+
+ let initialDataMewMobile = { myNumber: 0 };
+ sessionStorage.setItem('myDataMewMobile', JSON.stringify(initialDataMewMobile));
+
+ document.getElementById('divTextImg4Mobile').addEventListener('wheel', (event) => {
+     var y = event.deltaY;
+     let reference = 0
+     let storedData = JSON.parse(sessionStorage.getItem('myDataMewMobile'));
+     if (y > reference) {
+        
+       
+          if (storedData.myNumber <= -40) {
+              storedData.myNumber = -40
+              sessionStorage.setItem('myDataMewMobile', JSON.stringify(storedData));
+
+              document.getElementById('iframeYoutubeMobile').style.animation = '1s fadeIn ease-in'
+               document.getElementById("iframeYoutubeMobile").addEventListener("animationend", function () {
+                 document.getElementById("iframeYoutubeMobile").style.opacity = '1';  //Reset animation
+             }, { once: true });
+          }
+
+          else {
+              storedData.myNumber += -20;
+              document.getElementById('mewMobile').style.transform = `translateY(${storedData.myNumber}%)`;
+
+              sessionStorage.setItem('myDataMewMobile', JSON.stringify(storedData));
+
+          }
+
+       
+
+
+
+     }
+
+     else if (y < reference) {
+
+
+
+
+
+        if (storedData.myNumber >= 0) {
+            storedData.myNumber = 0
+            sessionStorage.setItem('myDataMewMobile', JSON.stringify(storedData));
+        }
+
+        else {
+            storedData.myNumber += 20;
+            document.getElementById('mewMobile').style.transform = `translateY(${storedData.myNumber}%)`;
+
+            sessionStorage.setItem('myDataMewMobile', JSON.stringify(storedData));
+
+            document.getElementById('iframeYoutubeMobile').style.animation = '1s fadeOut ease-out'
+            document.getElementById("iframeYoutubeMobile").addEventListener("animationend", function () {
+              document.getElementById("iframeYoutubeMobile").style.opacity = '0';  //Reset animation
+          }, { once: true });
+
+
+        }
+
+
+     }
+ });
+
+
+
+// MEWMOBILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MEWMOBILETOUCH
+
+
+let reference1 = { myNumberReference: 0};
+sessionStorage.setItem('myDataReference1', JSON.stringify(reference1));
+
+
+
+
+document.getElementById('divTextImg4Mobile').addEventListener('touchstart', function(event) {   
+    let initialDataMew1 = { myNumber: event.touches[0].clientY };
+    sessionStorage.setItem('myDataMew1', JSON.stringify(initialDataMew1));
+
+});
+
+
+
+
+
+
+ 
+
+document.getElementById('divTextImg4Mobile').addEventListener('touchmove', (event) => {
+    var y = event.touches[0].clientY;
+    let reference = JSON.parse(sessionStorage.getItem('myDataReference1'));
+    let storedData = JSON.parse(sessionStorage.getItem('myDataMew1'));
+
+
+    
+
+     
+
+
+    if (y < storedData.myNumber) {
+        
+       
+         if (reference.myNumberReference <= -40) {
+            reference.myNumberReference = -40
+             sessionStorage.setItem('myDataReference1', JSON.stringify(reference));
+
+             document.getElementById('iframeYoutubeMobile').style.animation = '1s fadeIn ease-in'
+              document.getElementById("iframeYoutubeMobile").addEventListener("animationend", function () {
+                document.getElementById("iframeYoutubeMobile").style.opacity = '1'; // Reset animation
+            }, { once: true });
+         }
+
+         else {
+            reference.myNumberReference += -20;
+             document.getElementById('mewMobile').style.transform = `translateY(${reference.myNumberReference}%)`;
+
+             sessionStorage.setItem('myDataReference1', JSON.stringify(reference));
+
+         }
+
+       
+
+
+
+    }
+
+    else if (y > storedData.myNumber) {
+
+ 
+
+
+
+
+       if (reference.myNumberReference >= 0) {
+        reference.myNumberReference = 0
+           sessionStorage.setItem('myDataReference1', JSON.stringify(reference));
+       }
+
+       else {
+        reference.myNumberReference += 20;
+           document.getElementById('mewMobile').style.transform = `translateY(${reference.myNumberReference}%)`;
+
+           sessionStorage.setItem('myDataReference1', JSON.stringify(reference));
+
+           document.getElementById('iframeYoutubeMobile').style.animation = '1s fadeOut ease-out'
+           document.getElementById("iframeYoutubeMobile").addEventListener("animationend", function () {
+             document.getElementById("iframeYoutubeMobile").style.opacity = '0'; // Reset animation
+         }, { once: true });
+
+
+       }
+
+
+    }
+});
+
+
+//MEWMOBILETOUCH
+
+
+
+
+
+
+
+
+
+//VAPOREON
+
+
+  let initialDataVaporeon1 = { myNumber: 0 };
+  sessionStorage.setItem('myDataVaporeon1', JSON.stringify(initialDataVaporeon1));
+
+  document.getElementById('divTextImg4').addEventListener('wheel', (event) => {
+      var y = event.deltaY;
+      let reference = 0
+      let storedData = JSON.parse(sessionStorage.getItem('myDataVaporeon1'));
+      if (y > reference) {
+
+        
+        
+
+          if (storedData.myNumber >= 60) {
+              storedData.myNumber = 60
+              sessionStorage.setItem('myDataVaporeon1', JSON.stringify(storedData));
+          }
+
+          else {
+              storedData.myNumber += 30;
+              document.getElementById('vaporeon').style.transform = `translateY(${storedData.myNumber}%)`;
+
+              sessionStorage.setItem('myDataVaporeon1', JSON.stringify(storedData));
+
+          }
+
+
+
+      }
+
+      else if (y < reference) {
+
+
+       
+
+          if (storedData.myNumber <= 0) {
+              storedData.myNumber = 0
+              sessionStorage.setItem('myDataVaporeon1', JSON.stringify(storedData));
+          }
+
+          else {
+              storedData.myNumber -= 30;
+              document.getElementById('vaporeon').style.transform = `translateY(${storedData.myNumber}%)`;
+
+              sessionStorage.setItem('myDataVaporeon1', JSON.stringify(storedData));
+
+          }
+
+      }
+  });
+
+
+
+
+ //VAPOREON
+
+
+
+
+
+
+//VAPOREONTOUCH
+
+
+ let referenceVaporeonTouch = { myNumberReference: 0};
+ sessionStorage.setItem('myDataReferenceVaporeon', JSON.stringify(referenceVaporeonTouch));
+
+
+
+
+ document.getElementById('divTextImg4').addEventListener('touchstart', function(event) {   
+    let initialDataVaporeon = { myNumber: event.touches[0].clientY };
+    sessionStorage.setItem('myDataVaporeon', JSON.stringify(initialDataVaporeon));
+    
+  
+});
+
+
+
+
+
+//   let initialDataVaporeon = { myNumber: 0 };
+//   sessionStorage.setItem('myDataVaporeon', JSON.stringify(initialDataVaporeon));
+
+  document.getElementById('divTextImg4').addEventListener('touchmove', (event) => {
+
+      var y = event.touches[0].clientY;
+      let reference = JSON.parse(sessionStorage.getItem('myDataReferenceVaporeon'));
+      let storedData = JSON.parse(sessionStorage.getItem('myDataVaporeon'));
+      if (y < storedData.myNumber) {
+
+        
+        
+
+          if (reference.myNumberReference >= 60) {
+            reference.myNumberReference = 60
+              sessionStorage.setItem('myDataVaporeon', JSON.stringify(reference));
+          }
+
+          else {
+            reference.myNumberReference += 30;
+              document.getElementById('vaporeon').style.transform = `translateY(${reference.myNumberReference}%)`;
+
+              sessionStorage.setItem('myDataReferenceVaporeon', JSON.stringify(reference));
+
+          }
+
+
+
+      }
+
+      else if (y > storedData.myNumber) {
+
+
+       
+
+          if (reference.myNumberReference <= 0) {
+              reference.myNumberReference = 0
+              sessionStorage.setItem('myDataReferenceVaporeon', JSON.stringify(reference));
+          }
+
+          else {
+            reference.myNumberReference -= 30;
+              document.getElementById('vaporeon').style.transform = `translateY(${reference.myNumberReference}%)`;
+
+              sessionStorage.setItem('myDataReferenceVaporeon', JSON.stringify(reference));
+
+          }
+
+      }
+  });
+
+
+
+
+//VAPOREONTOUCH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //VAPOREON MOBILE
+
+
+  let initialDataVaporeonMobile = { myNumber: 0 };
+  sessionStorage.setItem('myDataVaporeonMobile', JSON.stringify(initialDataVaporeonMobile));
+
+  document.getElementById('html').addEventListener('wheel', (event) => {
+      var y = event.deltaY;
+      let reference = 0
+      let storedData = JSON.parse(sessionStorage.getItem('myDataVaporeonMobile'));
+      if (y > reference) {
+
+        
+        
+
+          if (storedData.myNumber >= 40) {
+              storedData.myNumber = 40
+              sessionStorage.setItem('myDataVaporeonMobile', JSON.stringify(storedData));
+          }
+
+          else {
+              storedData.myNumber += 20;
+              document.getElementById('vaporeonMobile').style.transform = `translateX(${storedData.myNumber}%)`;
+
+              sessionStorage.setItem('myDataVaporeonMobile', JSON.stringify(storedData));
+
+          }
+
+
+
+      }
+
+      else if (y < reference) {
+
+
+       
+
+          if (storedData.myNumber <= 0) {
+              storedData.myNumber = 0
+              sessionStorage.setItem('myDataVaporeonMobile', JSON.stringify(storedData));
+          }
+
+          else {
+              storedData.myNumber -= 20;
+              document.getElementById('vaporeonMobile').style.transform = `translateX(${storedData.myNumber}%)`;
+
+              sessionStorage.setItem('myDataVaporeonMobile', JSON.stringify(storedData));
+
+          }
+
+      }
+  });
+
+
+
+
+ //VAPOREON MOBILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//VAPOREON MOBILE TOUCH
+
+
+let reference2 = { myNumberReference: 0};
+sessionStorage.setItem('myDataReference2', JSON.stringify(reference2));
+
+
+
+
+document.getElementById('divTextImg4Mobile').addEventListener('touchstart', function(event) {   
+    let initialDataVaporeon1 = { myNumber: event.touches[0].clientY };
+    sessionStorage.setItem('myDataVaporeon2', JSON.stringify(initialDataVaporeon1));
+
+});
+
+
+
+
+
+
+
+ document.getElementById('divTextImg4Mobile').addEventListener('touchmove', (event) => {
+     var y = event.touches[0].clientY;
+     let reference = JSON.parse(sessionStorage.getItem('myDataReference2'));
+     let storedData = JSON.parse(sessionStorage.getItem('myDataVaporeon2'));
+
+     console.log(reference.myNumberReference);
+     if (y < storedData.myNumber) {
+
+        
+        
+
+         if (reference.myNumberReference >= 40) {
+            reference.myNumberReference = 40
+             sessionStorage.setItem('myDataReference2', JSON.stringify(reference));
+         }
+
+         else {
+            reference.myNumberReference += 20;
+             document.getElementById('vaporeonMobile').style.transform = `translateX(${reference.myNumberReference}%)`;
+
+             sessionStorage.setItem('myDataReference2', JSON.stringify(reference));
+
+         }
+
+
+
+     }
+
+     else if (y > storedData.myNumber) {
+
+
+       
+
+         if (reference.myNumberReference <= 0) {
+            reference.myNumberReference = 0
+             sessionStorage.setItem('myDataReference2', JSON.stringify(reference));
+         }
+
+         else {
+            reference.myNumberReference -= 20;
+             document.getElementById('vaporeonMobile').style.transform = `translateX(${reference.myNumberReference}%)`;
+
+             sessionStorage.setItem('myDataReference2', JSON.stringify(reference));
+
+         }
+
+     }
+ });
+
+
+ //VAPOREON MOBILE TOUCH
