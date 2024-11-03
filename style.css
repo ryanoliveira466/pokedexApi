@@ -164,7 +164,7 @@ html body {
     font-family: arcadeFont;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    cursor: url(img/type/bugIC_SV.png), auto;
+
 
 }
 
@@ -310,7 +310,8 @@ DEFAULT DELE */
 #logoPokemon {
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
-    cursor: url(img/cursor.png), auto; /* Use your custom image */
+    cursor: url(img/cursor.png), auto;
+    /* Use your custom image */
 }
 
 #logoPokemon:hover {
@@ -337,11 +338,12 @@ DEFAULT DELE */
     padding-top: 10px;
     padding-bottom: 10px;
     top: 277px;
-    cursor: url(img/cursor.png), auto; /* Use your custom image */
-    
+    cursor: url(img/cursor.png), auto;
+    /* Use your custom image */
+
 }
 
- 
+
 #inputTextoPokemon {
     transform: scale(1);
     transition: transform 0.1s ease-in-out;
@@ -352,7 +354,7 @@ DEFAULT DELE */
     transition: transform 0.1s ease-in-out;
 }
 
- 
+
 
 
 #pokemonSprite {
@@ -443,7 +445,8 @@ DEFAULT DELE */
     width: 100px;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
-    cursor: url(img/cursor.png), auto; /* Use your custom image */
+    cursor: url(img/cursor.png), auto;
+    /* Use your custom image */
 
 }
 
@@ -452,7 +455,8 @@ DEFAULT DELE */
     width: 100px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    cursor: url(img/cursor.png), auto; /* Use your custom image */
+    cursor: url(img/cursor.png), auto;
+    /* Use your custom image */
 
 }
 
@@ -645,7 +649,7 @@ DEFAULT DELE */
     min-width: 885px;
     position: relative;
     overflow-y: hidden;
-     
+
     /* overflow-x: hidden; */
 }
 
@@ -660,7 +664,7 @@ DEFAULT DELE */
     align-items: center;
     justify-content: center;
     text-align: center;
-     
+
 
 }
 
@@ -682,32 +686,26 @@ DEFAULT DELE */
     height: 1300px;
     display: flex;
     transition: 1s ease-out;
-    align-items: flex-end;     
+    align-items: flex-end;
 }
 
- 
+
 #vaporeon {
     height: 1300px;
     display: flex;
     transition: 2s ease-out;
-     
 
-}
 
- 
-
-#iframeYoutube{
-   position: absolute;
-   top: 280px;
-   right: 200px;
-   opacity: 0;
 }
 
 
 
- 
- 
- 
+#iframeYoutube {
+    position: absolute;
+    top: 280px;
+    right: 200px;
+    opacity: 0;
+}
 
 
 
@@ -718,7 +716,13 @@ DEFAULT DELE */
 
 
 
-#divTextImg4Mobile{
+
+
+
+
+
+
+#divTextImg4Mobile {
     display: none;
     background-color: rgb(121, 138, 155);
     flex-direction: row;
@@ -733,30 +737,30 @@ DEFAULT DELE */
 }
 
 
-#iframeYoutubeMobile{
+#iframeYoutubeMobile {
     position: absolute;
     top: 850px;
     opacity: 0;
- }
+}
 
 
 
-#mewMobile{
+#mewMobile {
     height: 1300px;
     display: flex;
     transition: 1s ease-out;
     align-items: flex-end;
-    
-     
+
+
 }
 
-#vaporeonMobile{
+#vaporeonMobile {
 
     height: 600px;
     display: flex;
     transition: 3s ease-out;
-     
-     
+
+
 
 }
 
@@ -794,8 +798,8 @@ DEFAULT DELE */
 
 
 
- @media only screen and (max-width: 1629px) {
-    #iframeYoutube{
+@media only screen and (max-width: 1629px) {
+    #iframeYoutube {
         right: 100px;
     }
 }
@@ -812,15 +816,100 @@ DEFAULT DELE */
 
 
 @media only screen and (max-width: 1154px) {
-    #divTextImg4{
+    #divTextImg4 {
         display: none;
     }
 
-    #divTextImg4Mobile{
+    #divTextImg4Mobile {
         display: flex;
     }
 }
 
+
+
+
+
+
+
+/* MOBILE ADJUSTMENT */
+
+@media only screen and (max-width: 600px) {
+
+
+    /* SOMENTE AUMENTAR A IMAGE FEITA PARA O MOBILE ZOOM 1.6*/
+
+
+    #imgPokedex {
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-position: -140px;
+        background-image: url(img/mobilePokedex.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 530px;
+        height: 930px;
+        margin: 10px;
+        zoom: 1.6;
+    }
+
+    #dataPokemon {
+        display: flex;
+        align-self: center;
+        width: 288px;
+        height: 210px;
+        margin-right: 14px;
+        margin-top: 131px;
+        margin-bottom: 0px;
+        margin-left: 60px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: rgb(49, 46, 46);
+        background-color: rgb(194, 232, 255);
+        border: 7px solid #798a9b;
+        transform: scale(1);
+        transition: 2s ease;
+
+    }
+
+
+
+    #butonsAudio {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 759px;
+        right: 199px;
+        flex-direction: column;
+    }
+
+    #pokemonSprite {
+        margin-left: 60px;
+    }
+
+    #pokemonHelloMessageOrError {
+        margin-left: 60px;
+    }
+
+    #inputTextoPokemon {
+        margin-left: 60px;
+    }
+
+    #soundWave {
+        display: none;
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        left: 70px;
+        top: 135px;
+        transform: rotate(90deg);
+    }
+
+}
+
+/* MOBILE ADJUSTMENT */
 
 
 
@@ -836,8 +925,9 @@ DEFAULT DELE */
 }
 
 
-.custom-cursor{
-    cursor: url(img/cursor.png), auto; /* Use your custom image */
+.custom-cursor {
+    cursor: url(img/cursor.png), auto;
+    /* Use your custom image */
 }
 
 .alias,
@@ -876,5 +966,6 @@ DEFAULT DELE */
 .wait,
 .zoom-in,
 .zoom-out {
-    cursor: url(img/cursor.png), auto; /* Use your custom image */
+    cursor: url(img/cursor.png), auto;
+    /* Use your custom image */
 }
