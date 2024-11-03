@@ -833,7 +833,7 @@ DEFAULT DELE */
 
 /* MOBILE ADJUSTMENT */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
 
 
     /* SOMENTE AUMENTAR A IMAGE FEITA PARA O MOBILE ZOOM 1.6*/
@@ -845,7 +845,7 @@ DEFAULT DELE */
         display: flex;
         justify-content: center;
         background-position: -140px;
-        background-image: url(img/mobilePokedex.png);
+        background-image: url(img/mobilePokedexCropped.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 530px;
