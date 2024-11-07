@@ -833,7 +833,7 @@ DEFAULT DELE */
 
 /* MOBILE ADJUSTMENT */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1080px) {
 
 
     /* SOMENTE AUMENTAR A IMAGE FEITA PARA O MOBILE ZOOM 1.6*/
@@ -906,11 +906,61 @@ DEFAULT DELE */
         top: 135px;
         transform: rotate(90deg);
     }
+    
 
 }
 
 /* MOBILE ADJUSTMENT */
 
+@media only screen and (max-width: 1624px) {
+
+    #pikachuContentDiv{
+        width: 40%;
+        height: 40%;
+    }
+
+    #pikachuContentDiv2{
+        width: 40%;
+        height: 40%;
+    }
+
+    #pikachuContentDiv3{
+        width: 40%;
+        height: 40%;
+    }
+
+    #contentText{
+        min-width: 95%;
+        height: auto;
+    }
+ 
+
+    #contentText img{
+        width: 30%; 
+    }
+
+
+    #contentText2{
+        min-width: 95%;
+        height: auto;
+    }
+
+    #contentText2 img{
+        width: 40%; 
+    }
+
+    #contentText3{
+        min-width: 95%;
+        height: auto;
+    }
+
+    #contentText3 img{
+        width: 15%;
+    } 
+
+}
+
+ 
 
 
 /* width */
