@@ -929,36 +929,88 @@ DEFAULT DELE */
         height: 40%;
     }
 
+    #imgPokedex{
+        /* transform: scale(0.8); */
+    }
+
     #contentText{
-        min-width: 95%;
+        min-width: 70%;
         height: auto;
     }
  
 
     #contentText img{
-        width: 30%; 
+        width: 30%;
+        height: 30%;
     }
 
 
     #contentText2{
-        min-width: 95%;
+        min-width: 70%;
         height: auto;
     }
 
     #contentText2 img{
-        width: 40%; 
+        width: 40%;
+        height: 40%;
     }
 
     #contentText3{
-        min-width: 95%;
+        min-width: 70%;
         height: auto;
     }
 
     #contentText3 img{
-        width: 15%;
+         
+        width: 20%;
+        height: 20%;
     } 
 
+    #vaporeonImg{
+         transform: scale(0.8);
+    }
+
+    #mewImg{
+        transform: scale(0.8);
+         
+    }
+
 }
+
+
+@media only screen and (max-width: 885px) {
+    #pikachuContentDiv{
+        width: inherit;
+        height: inherit;
+    }
+
+    #pikachuContentDiv2{
+        width: inherit;
+        height: inherit;
+    }
+
+    #pikachuContentDiv3{
+        width: inherit;
+        height: inherit;
+    }
+
+    #contentText img{
+        width: inherit;
+        height: inherit;
+    }
+
+    #contentText2 img{
+        width: inherit;
+        height: inherit;
+    }
+
+    #contentText3 img{
+        width: inherit;
+        height: inherit;
+    }
+}
+
+
 
  
 
