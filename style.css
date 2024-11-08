@@ -906,7 +906,7 @@ DEFAULT DELE */
         top: 135px;
         transform: rotate(90deg);
     }
-    
+
 
 }
 
@@ -914,58 +914,126 @@ DEFAULT DELE */
 
 @media only screen and (max-width: 1624px) {
 
-    #pikachuContentDiv{
+    #pikachuContentDiv {
         width: 40%;
         height: 40%;
     }
 
-    #pikachuContentDiv2{
+    #pikachuContentDiv2 {
         width: 40%;
         height: 40%;
     }
 
-    #pikachuContentDiv3{
+    #pikachuContentDiv3 {
         width: 40%;
         height: 40%;
     }
 
-    #contentText{
-        min-width: 95%;
-        height: auto;
-    }
- 
+    #imgPokedex {}
 
-    #contentText img{
-        width: 30%; 
-    }
-
-
-    #contentText2{
+    #contentText {
         min-width: 95%;
         height: auto;
     }
 
-    #contentText2 img{
-        width: 40%; 
+
+    #contentText img {
+        width: 30%;
+        height: 30%;
     }
 
-    #contentText3{
+
+    #contentText2 {
         min-width: 95%;
         height: auto;
     }
 
-    #contentText3 img{
-        width: 15%;
-    } 
+    #contentText2 img {
+        width: 40%;
+        height: 40%;
+    }
+
+    #contentText3 {
+        min-width: 95%;
+        height: auto;
+    }
+
+    #contentText3 img {
+
+        width: 20%;
+        height: 20%;
+    }
+
+    #vaporeonImg {
+        transform: scale(0.8);
+    }
+
+    #mewImg {
+        transform: scale(0.8);
+
+    }
 
 }
 
- 
+
+@media only screen and (max-width: 885px) {
+    #pikachuContentDiv {
+        width: initial;
+        height: initial;
+    }
+
+    #pikachuContentDiv2 {
+        width: 735px;
+        height: 752px;
+    }
+
+    #pikachuContentDiv3 {
+        width: 735px;
+        height: 752px;
+    }
+
+    #contentText img {
+        width: initial;
+        height: initial;
+    }
+
+    #contentText2 img {
+        width: initial;
+        height: initial;
+    }
+
+    #contentText3 img {
+        width: initial;
+        height: initial;
+    }
+
+    #contentText {
+        min-width: 865px;
+        height: 700px;
+    }
+
+
+    #contentText2 {
+        min-width: 865px;
+        height: 700px;
+    }
+
+
+    #contentText3 {
+        min-width: 865px;
+        height: 700px;
+    }
+
+}
+
+
+
+
 
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 5px;
 }
 
 /* Handle */
